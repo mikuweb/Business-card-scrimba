@@ -1,0 +1,20 @@
+body{
+background: #23252C;
+}
+
+.card{
+  width: 320px;
+  height: 790px;
+  margin: 10px auto;
+}
+
+.picture{
+  width: 320px;
+  border-radius: 10px;
+
+}
+
+.myname{
+  color: #fff;
+  text-align: center;
+}
