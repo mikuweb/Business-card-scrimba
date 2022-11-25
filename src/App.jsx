@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="card">
     <img className='picture' src='./images/me_flower.JPG'></img>
+    <div className='card__container'>
      <h1 className='myname'>Miku Kawata</h1>
      <p className='occupation'>Frontend Developer</p>
      <div className='website__center'><a className='website' href='#'>Miku.website</a></div>
@@ -36,8 +37,9 @@ function App() {
       title="Interests"
       content="Love piano, traveling, reading, traveling, learning, flowers, cheese, making latte art, and dogs."
       />
-
+ </div>
       <Links />
+     
      </div>
   )
 }
