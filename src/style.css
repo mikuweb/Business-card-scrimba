@@ -1,121 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-body{
-background: #23252C;
-font-family: 'Inter', sans-serif;
+body {
+  background: #23252c;
+  font-family: "Inter", sans-serif;
 }
 
-.card{
-  width: 320px;
+.card {
+  max-width: 320px;
   height: 790px;
   margin: 10px auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.card__container{
+.card__container {
   padding: 25px 35px;
+  background-color: #1a1b21;
 }
 
-.picture{
-  width: 320px;
-  border-radius: 10px;
-
+.picture {
+  max-width: 320px;
+  border-radius: 10px 10px 0 0;
 }
 
-.myname{
+@media screen and (max-width: 320px) {
+  .picture {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
+.myname {
   color: #fff;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 25px;
   margin: 0;
-
 }
 
-.occupation{
+.occupation {
   text-align: center;
-color:#F3BF99;
-font-size: 13px;
-font-weight: 400;
+  color: #f3bf99;
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-.btns{
+.btns {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   padding: 15px 0;
 }
 
-.btns__btn{
+.btns__btn {
   text-align: center;
   align-items: center;
   display: inline-block;
   padding: 9px 13px 9px 11px;
   text-decoration: none;
-  background: #5093E2;/*ボタン色*/
-  color: #FFF;
+
   border-radius: 3px;
-  width: 100px;
+  width: 90px;
   height: 20px;
   font-size: 15px;
+  transition: all 0.15s ease-in;
 }
 
-.website__center{
+.btns_btn_white {
+  background-color: white;
+  color: #374151;
+}
+.btns_btn_blue {
+  background: #5093e2; /*ボタン色*/
+  color: #fff;
+}
+
+.website__center {
   text-align: center;
 }
-.website{
+.website {
   text-align: center;
-  color: #F5F5F5;
+  color: #f5f5f5;
   font-size: 11px;
   font-weight: 400;
   text-decoration: none;
-}
-
-.website:hover{
-  font-weight: 700;
-  font-size: 12px;
   cursor: pointer;
+  transition: all 0.1s ease-in;
+  display: inline-block;
 }
 
-.contents__content{
+.website:hover {
+  transform: scale(1.25);
+}
+
+.contents__content {
   margin-bottom: 10px;
 }
 
-.btns__btn:hover{
- opacity: 0.4;
+.btns__btn:hover {
+  transform: scale(1.05);
 }
 
-.btns__icon{
-padding-right: 10px;
-color: #fff;
+.btns__icon {
+  padding-right: 10px;
+  color: #fff;
 }
 
-
-.contents__title{
-  color:#F5F5F5;
+.contents__title {
+  color: #f5f5f5;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.contents__content{
-  color: #DCDCDC;
+.contents__content {
+  color: #dcdcdc;
   font-size: 11px;
   font-weight: 400;
   line-height: 16px;
-
 }
 
-.links__container{
+.links__container {
   padding: 0 35px;
+  background-color: #161619;
   display: flex;
   justify-content: space-around;
-
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 6px;
+  padding-top: 10px;
 }
-.links__icon{
- color: #918E9B;
+.links__icon {
+  color: #918e9b;
 }
 
-.links__icon:hover{
- opacity: 0.4;
+.links__icon:hover {
+  opacity: 0.4;
 }
